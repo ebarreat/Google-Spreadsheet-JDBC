@@ -1,7 +1,7 @@
 # Google-Spreadsheet-JDBC
 This is a JDBC to connect your Google Spreadsheets to Mysql or Microsoft SQL servers
 
-Parameters to fill will bet enclosed with percentage signs with all cap lettering. For example: '%CAP LETTERS%'
+Parameters to fill will be enclosed with percentage signs with all cap lettering. For example: '%CAP LETTERS%'
 
 To install, 
 1. Create new spreadsheet Or open the spreadsheet where you want your connection.
