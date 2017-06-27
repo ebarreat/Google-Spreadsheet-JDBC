@@ -46,13 +46,16 @@ function createMysqlPrompt(){
         if(QueryPrompt.getSelectedButton() == ui.Button.OK){
           QueryPrompt = ui.prompt('Query','Please paste your Query here', ui.ButtonSet.OK_CANCEL);
           queryText = QueryPrompt.getResponseText();
+         
+         if(QueryPrompt.getSelectedButton() == ui.Button.OK){
+              queryTitle = "Query - " + queryTitle;
+              var queryObj = new Query(queryType,queryDb,queryTitle,queryTab, queryColumn,queryRow,queryText);
+              PropertiesService.getScriptProperties().setProperty(queryTitle, JSON.stringify(queryObj));
+          }          
         }
       }
     }
   }
-  queryTitle = "Query - " + queryTitle;
-  var queryObj = new Query(queryType,queryDb,queryTitle,queryTab, queryColumn,queryRow,queryText);
-  PropertiesService.getScriptProperties().setProperty(queryTitle, JSON.stringify(queryObj));
   
   refreshPrompt();
 }
@@ -90,14 +93,17 @@ function createMssqlPrompt(){
           if(QueryPrompt.getSelectedButton() == ui.Button.OK){
             QueryPrompt = ui.prompt('Query','Please paste your Query here', ui.ButtonSet.OK_CANCEL);
             queryText = QueryPrompt.getResponseText();
+         
+            if(QueryPrompt.getSelectedButton() == ui.Button.OK){
+              queryTitle = "Query - " + queryTitle;
+              var queryObj = new Query(queryType,queryDb,queryTitle,queryTab, queryColumn,queryRow,queryText);
+              PropertiesService.getScriptProperties().setProperty(queryTitle, JSON.stringify(queryObj));
+            }            
           }
         }
       }
     }
   }
-  queryTitle = "Query - " + queryTitle;
-  var queryObj = new Query(queryType,queryDb,queryTitle,queryTab, queryColumn,queryRow,queryText);
-  PropertiesService.getScriptProperties().setProperty(queryTitle, JSON.stringify(queryObj));
   
   refreshPrompt();
 }
