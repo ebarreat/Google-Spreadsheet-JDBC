@@ -1,4 +1,4 @@
-// Please make sure to submit your changes for review @ 
+// Please make sure to submit your changes for review @  https://github.com/ebarreat/Google-Spreadsheet-JDBC
 function onOpen() {
   SpreadsheetApp.getUi()
   .createMenu('Connection')
