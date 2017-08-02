@@ -1,9 +1,7 @@
 # Google-Spreadsheet-JDBC
-This is a JDBC to connect your Google Spreadsheets to Mysql or Microsoft SQL servers
+This is a JDBC to connect your Google Spreadsheets to Mysql or Microsoft SQL servers. I am also working on setting this up as a free Google Spreadsheet Add-on. I will be publishing new commits soon. If you would like to assist in this project please fork this project so we can communicate changes. You may contact me @ erick.b1337@gmail.com
 
 Parameters to fill will be enclosed with percentage signs with all cap lettering. For example: '%CAP LETTERS%'
-
-Frazer Affiliates click here: [Frazer Doc](https://docs.google.com/a/frazerbilt.com/document/d/1_68j3a3wmDpYh-heXK11D75OZ3LA5lBKLKdXjtOz3gg/edit?usp=sharing) 
 
 To install, 
 1. Create new spreadsheet Or open the spreadsheet where you want your connection.
